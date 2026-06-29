@@ -147,19 +147,17 @@
   /* ---------- ad creatives ---------- */
   .creatives{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px;}
   .creative{
-    position:relative;aspect-ratio:4/5;border:1px solid var(--line);overflow:hidden;
-    display:flex;flex-direction:column;justify-content:space-between;padding:18px 14px;text-align:center;
-    transition:transform .35s ease,border-color .35s ease;
+    position:relative;aspect-ratio:9/16;border:1px solid var(--line);overflow:hidden;
+    transition:transform .35s ease,border-color .35s ease;background:#0c0a0b;
   }
   .creative:hover{transform:translateY(-6px);border-color:var(--gold);}
-  .creative .loc{font-size:8px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;}
-  .creative .copy{font-family:'Cormorant Garamond',serif;font-size:clamp(15px,1.6vw,19px);line-height:1.22;font-weight:500;}
-  .creative .copy .it{font-style:italic;}
-  .creative .cta{border:1px solid var(--gold);color:var(--gold);font-size:8px;letter-spacing:1.5px;padding:7px;text-transform:uppercase;}
+  .creative img{width:100%;height:100%;object-fit:cover;display:block;}
   .creative .views{
     position:absolute;top:10px;right:10px;background:var(--ink);color:#15110d;
     font-weight:600;font-size:12px;padding:3px 9px;border-radius:20px;font-family:'Montserrat',sans-serif;
+    box-shadow:0 4px 14px rgba(0,0,0,.45);
   }
+  .creative .views::before{content:"▶ ";font-size:9px;}
 
   /* ---------- donut insight ---------- */
   .insight{
@@ -343,28 +341,20 @@
 
     <div class="sec-label reveal" style="margin-top:54px;"><span class="script">Anuncios activos</span><span class="rule"></span><span class="mini">Por visualizaciones</span></div>
     <div class="creatives">
-      <div class="creative reveal" style="background:radial-gradient(120% 90% at 50% 25%,#221a14 0%,#0c0a0b 70%);">
-        <div class="loc">— Noir · Chueca —</div>
-        <div class="copy">Tu barbería en el <span class="it">corazón</span> de Chueca.</div>
-        <div class="cta">Reserva ahora</div>
+      <div class="creative reveal">
+        <img src="assets/anuncios/corazon-chueca.png" alt="Anuncio Noir Chueca — Tu barbería en el corazón de Chueca" loading="lazy">
         <div class="views">8.460</div>
       </div>
-      <div class="creative reveal" style="background:radial-gradient(120% 90% at 50% 25%,#1d1a16 0%,#0c0a0b 70%);">
-        <div class="loc">— Noir · Pozuelo —</div>
-        <div class="copy">Tu barbero en <span class="it">Pozuelo.</span></div>
-        <div class="cta">Reserva ahora</div>
+      <div class="creative reveal">
+        <img src="assets/anuncios/pozuelo-barbero.png" alt="Anuncio Noir Pozuelo — Tu barbero en Pozuelo" loading="lazy">
         <div class="views">7.404</div>
       </div>
-      <div class="creative reveal" style="background:radial-gradient(120% 90% at 50% 25%,#241b13 0%,#0c0a0b 70%);">
-        <div class="loc">— Noir · Chueca —</div>
-        <div class="copy" style="color:var(--gold);">{ Una barbería en <span class="it" style="color:var(--ink);">Chueca.</span> Una barbería de <span class="it" style="color:var(--ink);">autor.</span> }</div>
-        <div class="cta">Reserva ahora</div>
+      <div class="creative reveal">
+        <img src="assets/anuncios/autor-chueca.png" alt="Anuncio Noir Chueca — Una barbería de autor" loading="lazy">
         <div class="views">6.282</div>
       </div>
-      <div class="creative reveal" style="background:radial-gradient(120% 90% at 50% 25%,#1a1714 0%,#0c0a0b 70%);">
-        <div class="loc">— Noir · Pozuelo —</div>
-        <div class="copy" style="color:var(--gold);">{ Pozuelo, esto no es una <span class="it" style="color:var(--ink);">peluquería.</span> }</div>
-        <div class="cta">Reserva ahora</div>
+      <div class="creative reveal">
+        <img src="assets/anuncios/pozuelo-peluqueria.png" alt="Anuncio Noir Pozuelo — Esto no es una peluquería" loading="lazy">
         <div class="views">5.348</div>
       </div>
     </div>
