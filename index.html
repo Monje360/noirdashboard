@@ -219,6 +219,16 @@
   .plan-card p{margin:0;font-size:14px;line-height:1.7;color:var(--muted);}
   @media(max-width:880px){.plan-grid{grid-template-columns:1fr;}}
 
+  /* ---------- flow (pasos) ---------- */
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px;}
+  .flow .step{background:linear-gradient(160deg,var(--panel),var(--panel-2));border:1px solid var(--line);padding:28px;}
+  .light .flow .step{box-shadow:0 16px 44px rgba(60,45,20,.07);}
+  .flow .s-n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;color:var(--gold);margin-bottom:12px;}
+  .flow .step h4{margin:0 0 10px;font-size:16px;font-weight:600;color:var(--ink);}
+  .flow .step p{margin:0;font-size:13px;line-height:1.6;color:var(--muted);}
+  @media(max-width:880px){.flow{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.flow{grid-template-columns:1fr;}}
+
   /* ---------- roadmap ---------- */
   .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px;}
   .tl{background:var(--bg-2);padding:28px 22px;cursor:pointer;transition:background .3s ease;text-align:left;border:none;color:inherit;font-family:inherit;}
@@ -608,17 +618,29 @@
           <div class="plan-card reveal"><div class="tagline">Otoño</div><h4>Preparados para la campaña</h4><p>Este contenido es la base de octubre, noviembre y diciembre: Halloween, Black Friday y Navidad, las fechas más fuertes del año a nivel de comercios.</p></div>
         </div>
 
-        <div class="sec-label reveal" style="margin-top:64px;"><span class="script">Presupuesto de la grabación</span><span class="rule"></span></div>
-        <div class="budget reveal">
-          <div class="b-main">
-            <div class="label">Estimación del rodaje</div>
-            <div class="big">desde 450€</div>
-            <div class="note">Es una estimación orientativa, no definitiva: el coste final depende de los factores y del contenido que grabemos.</div>
-          </div>
-          <div class="b-side">
-            <div class="line"><span class="mk in">✓</span><p><strong>Incluido en la cuota mensual.</strong> Estrategia, gestión de los anuncios, creación de contenido y publicación cada mes.</p></div>
-            <div class="line"><span class="mk ex">✗</span><p><strong>Aparte de la cuota.</strong> La grabación y la sesión de fotos de septiembre, y el presupuesto de anuncios que decidáis invertir cada mes.</p></div>
-          </div>
+        <div class="sec-label reveal" style="margin-top:64px;"><span class="script">Del rodaje al contenido</span><span class="rule"></span></div>
+        <div class="flow reveal">
+          <div class="step"><div class="s-n">01</div><h4>Preproducción</h4><p>Guion, localizaciones en Chueca y Pozuelo y listado de tomas y fotos antes de rodar.</p></div>
+          <div class="step"><div class="s-n">02</div><h4>Rodaje</h4><p>Jornada de grabación en las dos barberías: vídeo y fotografía con el tono Noir.</p></div>
+          <div class="step"><div class="s-n">03</div><h4>Postproducción</h4><p>Edición, color y versiones adaptadas a cada formato: Reels, Historias, web y anuncios.</p></div>
+          <div class="step"><div class="s-n">04</div><h4>Entrega</h4><p>Un banco de piezas listo para publicar y para alimentar la campaña del último trimestre.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJAMOS (oscuro) -->
+    <section>
+      <div class="wrap">
+        <div class="eyebrow reveal">Cómo trabajamos<span class="rule"></span><span class="tag">Cada mes</span></div>
+        <h2 class="section-title reveal">Qué hay <span class="thin">detrás</span> del plan</h2>
+        <p class="lead reveal">El trabajo que sostiene los resultados. Así gestionamos la publicidad, el contenido y el seguimiento cada mes, para que sepáis en todo momento qué se está haciendo y por qué.</p>
+        <div class="plan-grid">
+          <div class="plan-card reveal"><div class="tagline">Anuncios</div><h4>Gestión activa</h4><p>Segmentación por zona (Chueca y el eje Pozuelo–Boadilla), públicos y retargeting. Revisamos el rendimiento durante el mes y movemos el presupuesto hacia lo que mejor funciona.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Creatividades</div><h4>Prueba y escalado</h4><p>Test A/B de mensaje y formato. Escalamos las piezas que ganan y pausamos las que no rinden, para no gastar de más en lo que no convierte.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Contenido</div><h4>Calendario mensual</h4><p>Mezcla de Historias y publicaciones planificada, con edición y textos en el tono Noir. Nada improvisado: cada pieza tiene su sitio.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Medición</div><h4>Métricas que importan</h4><p>Seguimos alcance, coste por resultado, clics, visitas al perfil y seguidores. Miramos lo que mueve reservas, no las cifras de vanidad.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Informe</div><h4>Un panel cada mes</h4><p>Un informe como este al cierre de cada mes, con los números y su lectura, y una llamada breve para revisarlo juntos.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Transparencia</div><h4>Sin letra pequeña</h4><p>Acceso a los resultados y decisiones explicadas con claridad. Sabéis en qué se invierte y qué esperamos de cada acción.</p></div>
         </div>
       </div>
     </section>
