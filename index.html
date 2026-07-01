@@ -229,6 +229,15 @@
   @media(max-width:880px){.flow{grid-template-columns:1fr 1fr;}}
   @media(max-width:480px){.flow{grid-template-columns:1fr;}}
 
+  /* ---------- kpis ---------- */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px;}
+  .kpi{background:var(--bg-2);padding:28px 24px;}
+  .kpi .k-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  .kpi h4{margin:0 0 8px;font-size:17px;font-weight:600;letter-spacing:-0.3px;color:var(--ink);}
+  .kpi p{margin:0;font-size:12.5px;line-height:1.55;color:var(--muted);}
+  @media(max-width:880px){.kpis{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.kpis{grid-template-columns:1fr;}}
+
   /* ---------- roadmap ---------- */
   .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px;}
   .tl{background:var(--bg-2);padding:28px 22px;cursor:pointer;transition:background .3s ease;text-align:left;border:none;color:inherit;font-family:inherit;}
@@ -641,6 +650,25 @@
           <div class="plan-card reveal"><div class="tagline">Medición</div><h4>Métricas que importan</h4><p>Seguimos alcance, coste por resultado, clics, visitas al perfil y seguidores. Miramos lo que mueve reservas, no las cifras de vanidad.</p></div>
           <div class="plan-card reveal"><div class="tagline">Informe</div><h4>Un panel cada mes</h4><p>Un informe como este al cierre de cada mes, con los números y su lectura, y una llamada breve para revisarlo juntos.</p></div>
           <div class="plan-card reveal"><div class="tagline">Transparencia</div><h4>Sin letra pequeña</h4><p>Acceso a los resultados y decisiones explicadas con claridad. Sabéis en qué se invierte y qué esperamos de cada acción.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPIs (claro) -->
+    <section class="light">
+      <div class="wrap">
+        <div class="eyebrow reveal">Qué medimos<span class="rule"></span><span class="tag">Informe mensual</span></div>
+        <h2 class="section-title reveal">Los indicadores que <span class="thin">reportamos</span></h2>
+        <p class="lead reveal">Cada mes recibís estos KPIs con su lectura. No son cifras sueltas: cada una responde a una pregunta concreta sobre cómo va la marca.</p>
+        <div class="kpis reveal">
+          <div class="kpi"><div class="k-tag">Alcance</div><h4>Cuentas alcanzadas</h4><p>A cuántas personas distintas llega el contenido.</p></div>
+          <div class="kpi"><div class="k-tag">Eficiencia</div><h4>Coste por resultado</h4><p>Lo que cuesta cada acción que buscamos.</p></div>
+          <div class="kpi"><div class="k-tag">Intención</div><h4>Clics al enlace</h4><p>Cuánta gente da el paso hacia la reserva.</p></div>
+          <div class="kpi"><div class="k-tag">Interés</div><h4>CTR</h4><p>% que hace clic tras ver el anuncio.</p></div>
+          <div class="kpi"><div class="k-tag">Saturación</div><h4>Frecuencia</h4><p>Cuántas veces ve cada persona la campaña.</p></div>
+          <div class="kpi"><div class="k-tag">Marca</div><h4>Visitas al perfil</h4><p>Interés directo en Noir tras el impacto.</p></div>
+          <div class="kpi"><div class="k-tag">Comunidad</div><h4>Seguidores nuevos</h4><p>Crecimiento del público propio mes a mes.</p></div>
+          <div class="kpi"><div class="k-tag">Coste medio</div><h4>CPM</h4><p>Coste por cada mil impresiones: mide lo rentable del alcance.</p></div>
         </div>
       </div>
     </section>
