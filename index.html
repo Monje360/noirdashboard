@@ -240,6 +240,15 @@
   @media(max-width:880px){.kpis{grid-template-columns:1fr 1fr;}}
   @media(max-width:480px){.kpis{grid-template-columns:1fr;}}
 
+  /* ---------- spec list (estudio) ---------- */
+  .addr{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted-2);margin-top:-6px;margin-bottom:26px;}
+  .spec .r{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--line-soft);font-size:13.5px;line-height:1.4;}
+  .spec .r:last-child{border-bottom:none;}
+  .spec .r .k{color:var(--muted);}
+  .spec .r .v{color:var(--ink);font-weight:500;text-align:right;}
+  .panel h4.p-title{margin:0 0 6px;font-size:16px;font-weight:600;color:var(--ink);}
+  .panel .p-sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+
   /* ---------- roadmap ---------- */
   .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px;}
   .tl{background:var(--bg-2);padding:28px 22px;cursor:pointer;transition:background .3s ease;text-align:left;border:none;color:inherit;font-family:inherit;}
@@ -340,6 +349,7 @@
   <nav class="views" aria-label="Secciones">
     <button data-view="analitica" class="active">Analítica</button>
     <button data-view="planificacion">Planificación</button>
+    <button data-view="estudio">Estudio</button>
   </nav>
 </header>
 
@@ -361,6 +371,7 @@
   <div class="hero-cta">
     <button class="btn solid" data-view="analitica">Analítica</button>
     <button class="btn ghost" data-view="planificacion">Planificación</button>
+    <button class="btn ghost" data-view="estudio">Estudio de mercado</button>
   </div>
   <div class="meta">
     <div>Periodo</div>
@@ -676,6 +687,208 @@
     </section>
   </div>
 
+  <!-- ============================================================ -->
+  <!-- ===================  ESTUDIO DE MERCADO  =================== -->
+  <!-- ============================================================ -->
+  <div class="view" data-view="estudio">
+
+    <section class="head-block">
+      <div class="wrap">
+        <div class="kick reveal">Estudio de mercado <span class="chip live">Chueca · Pozuelo</span></div>
+        <h2 class="reveal">Dos locales, <span class="thin">dos mercados</span></h2>
+        <p class="reveal">Chueca y Pozuelo no comparten el mismo cliente, y por eso no pueden compartir la misma estrategia. Este estudio analiza cada zona —tamaño, población, poder adquisitivo y tipo de cliente— y termina con una estrategia de venta pensada para cada barbería.</p>
+      </div>
+    </section>
+
+    <!-- CONTRASTE (claro) -->
+    <section class="light">
+      <div class="wrap">
+        <div class="eyebrow reveal">El contraste<span class="rule"></span><span class="tag">Datos de la app · 2026</span></div>
+        <h2 class="section-title reveal">Recurrente contra <span class="thin">de paso</span></h2>
+        <p class="lead reveal">La diferencia que detectó el equipo, en una cifra. En Pozuelo el cliente vuelve; en Chueca, casi todo es primera visita.</p>
+        <div class="hero-stats reveal">
+          <div class="stat-card">
+            <div class="label">Pozuelo · Av. de Europa</div>
+            <div class="big">69% <small>habitual</small></div>
+            <div class="note">31% nuevo · negocio de fidelidad</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Chueca · Hernán Cortés</div>
+            <div class="big">88% <small>nuevo</small></div>
+            <div class="note" style="color:var(--muted-2)">12% habitual · más del 80% de paso</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POZUELO (oscuro) -->
+    <section>
+      <div class="wrap">
+        <div class="eyebrow reveal">Pozuelo de Alarcón<span class="rule"></span><span class="tag">Zona 01</span></div>
+        <h2 class="section-title reveal">La zona más <span class="thin">rica de España</span></h2>
+        <div class="addr reveal">Av. de Europa, 18 · 28224 Pozuelo de Alarcón</div>
+        <p class="lead reveal">Municipio residencial y familiar al oeste de Madrid. Lidera España en renta desde hace años: mucho poder adquisitivo, poca rotación de población y un cliente que hace vida en la zona.</p>
+
+        <div class="stat-row reveal">
+          <div class="cell"><div class="num">90.500</div><div class="cap">Habitantes</div></div>
+          <div class="cell gold"><div class="num">96.290€</div><div class="cap">Renta media · hogar</div></div>
+          <div class="cell"><div class="num">Nº1</div><div class="cap">En renta de España</div><div class="sub dim">88.011€ per cápita</div></div>
+          <div class="cell"><div class="num">45,8</div><div class="cap">Edad media</div></div>
+          <div class="cell"><div class="num">3,9%</div><div class="cap">Paro</div><div class="sub">vs 10,4% nacional</div></div>
+        </div>
+
+        <div class="two even reveal" style="margin-top:40px;">
+          <div class="panel">
+            <h4 class="p-title">Perfil de cliente</h4>
+            <div class="p-sub">Quién entra por la puerta</div>
+            <div class="spec">
+              <div class="r"><span class="k">Tipo</span><span class="v">Residente y familiar</span></div>
+              <div class="r"><span class="k">Poder adquisitivo</span><span class="v">Muy alto</span></div>
+              <div class="r"><span class="k">Relación con el local</span><span class="v">Fiel, vuelve</span></div>
+              <div class="r"><span class="k">Cómo decide</span><span class="v">Reserva con antelación</span></div>
+              <div class="r"><span class="k">Qué valora</span><span class="v">Calidad y trato</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <h4 class="p-title">Comportamiento en Noir</h4>
+            <div class="p-sub">Datos de la app · 2026</div>
+            <div class="spec">
+              <div class="r"><span class="k">Clientes habituales</span><span class="v">69%</span></div>
+              <div class="r"><span class="k">Clientes nuevos</span><span class="v">31%</span></div>
+              <div class="r"><span class="k">Competencia en la zona</span><span class="v">Baja densidad</span></div>
+              <div class="r"><span class="k">Cliente cautivo</span><span class="v">Alto</span></div>
+              <div class="r"><span class="k">Valor por cliente</span><span class="v">Alto en el tiempo</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-box reveal" style="margin-top:34px;">
+          <p><span class="script">Lectura.</span> Pozuelo es un negocio de fidelidad. Hay menos gente y menos competencia, pero cada cliente es de alto poder adquisitivo y vuelve una y otra vez. Aquí no se gana captando sin parar, sino cuidando y exprimiendo la relación con el que ya viene.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHUECA (claro) -->
+    <section class="light">
+      <div class="wrap">
+        <div class="eyebrow reveal">Chueca · Barrio de Justicia<span class="rule"></span><span class="tag">Zona 02</span></div>
+        <h2 class="section-title reveal">Todo el <span class="thin">paso de Madrid</span></h2>
+        <div class="addr reveal">Calle de Hernán Cortés, 21 · Centro, Madrid</div>
+        <p class="lead reveal">Pleno centro, en el barrio más cosmopolita de la capital: zona LGTBIQ+ de referencia, ocio, turismo y muchísimo tránsito de gente. Población joven, competencia altísima y decisiones que se toman en la calle, al momento.</p>
+
+        <div class="stat-row reveal">
+          <div class="cell"><div class="num">18.045</div><div class="cap">Hab. barrio Justicia</div></div>
+          <div class="cell"><div class="num">149.718</div><div class="cap">Distrito Centro</div></div>
+          <div class="cell gold"><div class="num">19–35</div><div class="cap">Edad dominante</div></div>
+          <div class="cell"><div class="num">6.100€</div><div class="cap">Vivienda · €/m²</div><div class="sub dim">la más cara del Centro</div></div>
+          <div class="cell"><div class="num">+9%</div><div class="cap">Población · 10 años</div></div>
+        </div>
+
+        <div class="two even reveal" style="margin-top:40px;">
+          <div class="panel">
+            <h4 class="p-title">Perfil de cliente</h4>
+            <div class="p-sub">Quién entra por la puerta</div>
+            <div class="spec">
+              <div class="r"><span class="k">Tipo</span><span class="v">De paso, joven, turista</span></div>
+              <div class="r"><span class="k">Poder adquisitivo</span><span class="v">Medio-alto, impulsivo</span></div>
+              <div class="r"><span class="k">Relación con el local</span><span class="v">Poco fiel</span></div>
+              <div class="r"><span class="k">Cómo decide</span><span class="v">Impulso, aquí y ahora</span></div>
+              <div class="r"><span class="k">Qué valora</span><span class="v">Ubicación y disponibilidad</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <h4 class="p-title">Comportamiento en Noir</h4>
+            <div class="p-sub">App de citas y Booksy · 2026</div>
+            <div class="spec">
+              <div class="r"><span class="k">Clientes nuevos</span><span class="v">88%</span></div>
+              <div class="r"><span class="k">Clientes habituales</span><span class="v">12%</span></div>
+              <div class="r"><span class="k">Clientes de paso</span><span class="v">+80%</span></div>
+              <div class="r"><span class="k">Primera visita</span><span class="v">370 clientes</span></div>
+              <div class="r"><span class="k">Competencia en la zona</span><span class="v">Muy alta</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-box reveal" style="margin-top:34px;">
+          <p><span class="script">Lectura.</span> Chueca es un negocio de volumen. Entra muchísima gente, pero casi nadie vuelve: es una zona de paso con decenas de barberías compitiendo en pocas calles. El problema no es que no entren clientes —entran—, es que no se quedan. La partida se juega en captar bien y convertir el paso en recurrencia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARATIVA (oscuro) -->
+    <section>
+      <div class="wrap">
+        <div class="sec-label reveal"><span class="script">Cara a cara</span><span class="rule"></span></div>
+        <div class="two even reveal">
+          <div class="panel">
+            <h4 class="p-title">Pozuelo</h4>
+            <div class="p-sub">Fidelidad</div>
+            <div class="spec">
+              <div class="r"><span class="k">Población</span><span class="v">~90.500 residentes</span></div>
+              <div class="r"><span class="k">Renta media · hogar</span><span class="v">96.290€</span></div>
+              <div class="r"><span class="k">Perfil</span><span class="v">Residente fiel</span></div>
+              <div class="r"><span class="k">Paso de gente</span><span class="v">Bajo</span></div>
+              <div class="r"><span class="k">Reto</span><span class="v">Crecer y subir ticket</span></div>
+              <div class="r"><span class="k">Palanca</span><span class="v">Fidelizar al que vuelve</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <h4 class="p-title">Chueca</h4>
+            <div class="p-sub">Volumen</div>
+            <div class="spec">
+              <div class="r"><span class="k">Población</span><span class="v">18.045 + mucho paso</span></div>
+              <div class="r"><span class="k">Vivienda</span><span class="v">6.100€/m²</span></div>
+              <div class="r"><span class="k">Perfil</span><span class="v">De paso, joven</span></div>
+              <div class="r"><span class="k">Paso de gente</span><span class="v">Altísimo</span></div>
+              <div class="r"><span class="k">Reto</span><span class="v">Que vuelvan</span></div>
+              <div class="r"><span class="k">Palanca</span><span class="v">Captar y convertir</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTRATEGIA POZUELO (claro) -->
+    <section class="light">
+      <div class="wrap">
+        <div class="eyebrow reveal">Estrategia · Pozuelo<span class="rule"></span><span class="tag">Fidelizar</span></div>
+        <h2 class="section-title reveal">Exprimir la <span class="thin">fidelidad</span></h2>
+        <p class="lead reveal">El cliente ya vuelve. El negocio se juega en que vuelva más a menudo, gaste más por visita y traiga a otros como él.</p>
+        <div class="plan-grid">
+          <div class="plan-card reveal"><div class="tagline">Fidelización</div><h4>Bonos y membresía</h4><p>Bono de cortes o cuota mensual para quien ya es habitual: asegura la recurrencia y adelanta ingresos. En un cliente fiel y de alto poder, encaja de forma natural.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Recurrencia</div><h4>Recompra a tiempo</h4><p>Recordatorio a las 3–4 semanas para volver a reservar. En un cliente que ya vuelve, un empujón en el momento justo llena la agenda.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Ticket medio</div><h4>Subir el gasto por visita</h4><p>Combos de corte + barba, tratamientos y venta de producto premium. El cliente de Pozuelo paga por calidad; hay margen para ofrecer más.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Recomendación</div><h4>Boca a boca del barrio</h4><p>Programa de referidos y reseñas entre vecinos. En una comunidad cerrada y de alto poder adquisitivo, la recomendación de un conocido vale más que cualquier anuncio.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTRATEGIA CHUECA (oscuro) -->
+    <section>
+      <div class="wrap">
+        <div class="eyebrow reveal">Estrategia · Chueca<span class="rule"></span><span class="tag">Captar y convertir</span></div>
+        <h2 class="section-title reveal">Captar el paso y <span class="thin">hacer que vuelva</span></h2>
+        <p class="lead reveal">Aquí no falta gente, falta que se quede. El plan tiene dos tiempos: capturar bien al que pasa y darle un motivo para volver una segunda vez.</p>
+        <div class="plan-grid">
+          <div class="plan-card reveal"><div class="tagline">Visibilidad</div><h4>Ser el primero que ven</h4><p>Google Maps, SEO local y reseñas al día. En una zona de paso, quien aparece primero en el móvil se lleva la cita antes de que el cliente mire otra barbería.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Conversión</div><h4>Reserva sin fricción</h4><p>Booksy siempre con huecos visibles y respuesta rápida, y facilitar también el walk-in. El cliente de paso decide en segundos: si hay barrera, se va a la de al lado.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Marca personal</div><h4>El barbero como imán</h4><p>Potenciar los perfiles de los barberos, como Roberto: muchos clientes llegan por la persona y su trabajo, no por el local. Es la captación más barata que tenemos.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Recurrencia</div><h4>Gancho de segunda visita</h4><p>Un incentivo claro para volver —ventaja en la 2ª cita— y un recordatorio. Convertir aunque sea a uno de cada cinco de paso en recurrente cambia el negocio.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Segmentación</div><h4>Ir a por el residente</h4><p>Anuncios y contenido dirigidos a quien vive y trabaja en el centro, no solo al turista. Es el perfil de paso que sí puede repetir y hacerse habitual.</p></div>
+          <div class="plan-card reveal"><div class="tagline">Punto de venta</div><h4>Imagen impecable en la calle</h4><p>Escaparate, cartelería y presencia física cuidada. En Chueca, buena parte de la decisión se toma mirando el local al pasar por delante.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUENTES (claro) -->
+    <section class="light" style="padding-top:70px;padding-bottom:80px;">
+      <div class="wrap">
+        <div class="sec-label reveal"><span class="script">Fuentes y método</span><span class="rule"></span></div>
+        <p class="lead reveal" style="margin-bottom:0;">Datos de zona: padrón municipal 2025 (INE), renta media declarada 2023 (Agencia Tributaria, último dato oficial) e idealista 2025. Datos de comportamiento de cliente: app de citas y Booksy de Noir Barber Club, ejercicio 2026 (año en curso). Las cifras de competencia y perfil son una lectura del mercado, no un censo cerrado.</p>
+      </div>
+    </section>
+  </div>
+
 </main>
 
 <!-- =========== FOOTER =========== -->
@@ -694,7 +907,7 @@
 </footer>
 
 <script>
-  const VIEWS = ['analitica','planificacion'];
+  const VIEWS = ['analitica','planificacion','estudio'];
   const navBtns = document.querySelectorAll('.views button');
   const views = document.querySelectorAll('.view');
 
